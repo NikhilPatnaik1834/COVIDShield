@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YNT-rR-aAZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page-->
+        <scene sceneID="nc5-re-Kki">
+            <objects>
+                <viewController id="oz3-O9-79l" customClass="HomePage" customModule="COVID_SHIELD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c36-Jx-chz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDP" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-t4-jXH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-xy-fVX" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="50" y="782" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fub-RH-3KO"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="AhY-fW-eic" kind="show" id="tRF-ZS-b1O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dGK-WY-Gsk" firstAttribute="trailing" secondItem="Ygb-xy-fVX" secondAttribute="trailing" constant="50" id="1pt-jV-TlV"/>
+                            <constraint firstItem="ljp-t4-jXH" firstAttribute="top" secondItem="c36-Jx-chz" secondAttribute="top" id="2vL-CQ-0ax"/>
+                            <constraint firstAttribute="trailing" secondItem="ljp-t4-jXH" secondAttribute="trailing" id="KnJ-jS-5dC"/>
+                            <constraint firstItem="dGK-WY-Gsk" firstAttribute="bottom" secondItem="Ygb-xy-fVX" secondAttribute="bottom" constant="30" id="ao5-qm-k2h"/>
+                            <constraint firstItem="ljp-t4-jXH" firstAttribute="leading" secondItem="c36-Jx-chz" secondAttribute="leading" id="bUS-ue-3Cg"/>
+                            <constraint firstItem="Ygb-xy-fVX" firstAttribute="leading" secondItem="dGK-WY-Gsk" secondAttribute="leading" constant="50" id="rWr-ZG-2sV"/>
+                            <constraint firstAttribute="bottom" secondItem="ljp-t4-jXH" secondAttribute="bottom" id="ysq-Yx-yU5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dGK-WY-Gsk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nK1-GM-5d3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCa-3B-Tbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381.15942028985512" y="-2894.1964285714284"/>
+        </scene>
+        <!--Menu Page-->
+        <scene sceneID="xpi-pb-nvt">
+            <objects>
+                <viewController id="AhY-fW-eic" customClass="MenuPage" customModule="COVID_SHIELD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j5z-UQ-OUu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwM-VT-SyY" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="30" y="452" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2KQ-I5-4SU"/>
+                                </constraints>
+                                <state key="normal" title="How does it work?"/>
+                                <connections>
+                                    <segue destination="4kb-J3-aGd" kind="show" id="NAj-Xf-AyA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xT1-NP-bRd" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="30" y="512" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0MO-mt-n9g"/>
+                                </constraints>
+                                <state key="normal" title="How do we use your data?"/>
+                                <connections>
+                                    <segue destination="ct6-QP-gwv" kind="show" id="F4D-Q1-c5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQR-tb-A3M" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Ari-hQ-w24"/>
+                                    <constraint firstAttribute="height" constant="50" id="D32-pC-WEH"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="IYa-8g-j2j"/>
+                                </constraints>
+                                <state key="normal" title="Status Questionnaire"/>
+                                <connections>
+                                    <segue destination="8Wy-jt-mCJ" kind="show" id="qv5-G6-Ds1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVr-iQ-Yif" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="30" y="572" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qg2-hf-MQ1"/>
+                                </constraints>
+                                <state key="normal" title="Proceed To Map"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.47642082250000001" green="0.042370778679999999" blue="0.1013729991" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="seeMapButton:" destination="Guy-Yx-mGZ" eventType="touchUpInside" id="3Sb-VH-p92"/>
+                                    <segue destination="lHJ-1g-5WN" kind="show" identifier="" id="Ufe-XR-St9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="phM-nf-OD4">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="x5r-bg-UjZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xT1-NP-bRd" firstAttribute="top" secondItem="hwM-VT-SyY" secondAttribute="bottom" constant="10" id="3e6-hJ-uTg"/>
+                            <constraint firstItem="lQR-tb-A3M" firstAttribute="top" secondItem="FVr-iQ-Yif" secondAttribute="bottom" constant="180" id="7Rw-d8-kJH"/>
+                            <constraint firstItem="gqZ-g4-Bg3" firstAttribute="trailing" secondItem="hwM-VT-SyY" secondAttribute="trailing" constant="30" id="8S8-bT-egi"/>
+                            <constraint firstItem="phM-nf-OD4" firstAttribute="leading" secondItem="gqZ-g4-Bg3" secondAttribute="leading" constant="30" id="CAs-RF-0CE"/>
+                            <constraint firstItem="gqZ-g4-Bg3" firstAttribute="trailing" secondItem="phM-nf-OD4" secondAttribute="trailing" constant="30" id="Diy-Wo-hmk"/>
+                            <constraint firstItem="gqZ-g4-Bg3" firstAttribute="bottom" secondItem="lQR-tb-A3M" secondAttribute="bottom" constant="10" id="Kbd-ON-UxQ"/>
+                            <constraint firstItem="hwM-VT-SyY" firstAttribute="centerX" secondItem="j5z-UQ-OUu" secondAttribute="centerX" id="XPY-Uf-7MR"/>
+                            <constraint firstItem="lQR-tb-A3M" firstAttribute="centerX" secondItem="j5z-UQ-OUu" secondAttribute="centerX" id="Xv5-bc-Dzn"/>
+                            <constraint firstItem="FVr-iQ-Yif" firstAttribute="top" secondItem="xT1-NP-bRd" secondAttribute="bottom" constant="10" id="YBA-J5-RSY"/>
+                            <constraint firstItem="gqZ-g4-Bg3" firstAttribute="trailing" secondItem="FVr-iQ-Yif" secondAttribute="trailing" constant="30" id="az8-tM-gnT"/>
+                            <constraint firstItem="gqZ-g4-Bg3" firstAttribute="trailing" secondItem="xT1-NP-bRd" secondAttribute="trailing" constant="30" id="e5g-fP-FZr"/>
+                            <constraint firstAttribute="trailing" secondItem="lQR-tb-A3M" secondAttribute="trailing" constant="30" id="lfF-sx-BHv"/>
+                            <constraint firstItem="phM-nf-OD4" firstAttribute="top" secondItem="gqZ-g4-Bg3" secondAttribute="top" constant="30" id="pbJ-l9-riF"/>
+                            <constraint firstItem="xT1-NP-bRd" firstAttribute="centerX" secondItem="j5z-UQ-OUu" secondAttribute="centerX" id="xkf-b9-t2u"/>
+                            <constraint firstItem="FVr-iQ-Yif" firstAttribute="centerX" secondItem="j5z-UQ-OUu" secondAttribute="centerX" id="zg9-gX-42z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gqZ-g4-Bg3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dux-zU-xHd"/>
+                    <connections>
+                        <outlet property="seeMapButton" destination="FVr-iQ-Yif" id="EO7-5f-v0P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgb-7r-5aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Guy-Yx-mGZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="350.72463768115944" y="-2894.1964285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9zv-Am-95s">
+            <objects>
+                <viewController id="8Wy-jt-mCJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lKo-Yr-A0w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you show the following symptoms?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTW-SF-KFW">
+                                <rect key="frame" x="30" y="373" width="354" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="dVG-YC-0DP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lit-SS-XNn">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3K-5A-Chs" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Yes"/>
+                                        <connections>
+                                            <segue destination="wwI-dD-UQt" kind="show" id="oyA-Jj-N82"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3J-5u-ei0" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="No"/>
+                                        <connections>
+                                            <segue destination="pi4-oC-R8F" kind="show" id="qoP-Fh-BTb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OkJ-Ml-JwJ"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-sh-3v0">
+                                <rect key="frame" x="30" y="432" width="354" height="360"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="4IG-hq-LQg"/>
+                                </constraints>
+                                <string key="text">Signs and symptoms of COVID-19 may appear 2 to 14 days after exposure. This time after exposure and before having symptoms is called the incubation period. Common signs and symptoms can include:
+
+-	Fever
+-	Cough
+-	Shortness of breath or difficulty breathing
+
+Other symptoms can include:
+
+-	Tiredness
+-	Aches
+-	Chills
+-	Sore throat
+-	Loss of smell
+-	Loss of taste
+-	Headache
+-	Diarrhoea
+-	Severe vomiting
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="QUc-2U-fns">
+                                <rect key="frame" x="30" y="98" width="354" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="oFo-fM-mqw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Srs-sh-3v0" firstAttribute="leading" secondItem="Q2L-cv-QYR" secondAttribute="leading" constant="30" id="3oJ-nx-V9W"/>
+                            <constraint firstItem="Q2L-cv-QYR" firstAttribute="trailing" secondItem="Srs-sh-3v0" secondAttribute="trailing" constant="30" id="Bdk-xX-dSL"/>
+                            <constraint firstItem="QUc-2U-fns" firstAttribute="leading" secondItem="Q2L-cv-QYR" secondAttribute="leading" constant="30" id="S5I-Jq-2SZ"/>
+                            <constraint firstItem="lit-SS-XNn" firstAttribute="top" secondItem="Srs-sh-3v0" secondAttribute="bottom" constant="10" id="THG-Gc-gEf"/>
+                            <constraint firstItem="ZTW-SF-KFW" firstAttribute="leading" secondItem="Q2L-cv-QYR" secondAttribute="leading" constant="30" id="e85-yC-NDT"/>
+                            <constraint firstItem="lit-SS-XNn" firstAttribute="centerX" secondItem="lKo-Yr-A0w" secondAttribute="centerX" id="ejc-pb-1K8"/>
+                            <constraint firstItem="QUc-2U-fns" firstAttribute="top" secondItem="Q2L-cv-QYR" secondAttribute="top" constant="10" id="g8v-pJ-ct3"/>
+                            <constraint firstItem="Q2L-cv-QYR" firstAttribute="trailing" secondItem="QUc-2U-fns" secondAttribute="trailing" constant="30" id="nsK-SB-4iv"/>
+                            <constraint firstItem="Srs-sh-3v0" firstAttribute="top" secondItem="ZTW-SF-KFW" secondAttribute="bottom" constant="10" id="pzr-2n-UJ1"/>
+                            <constraint firstItem="Q2L-cv-QYR" firstAttribute="trailing" secondItem="lit-SS-XNn" secondAttribute="trailing" constant="30" id="rgZ-t0-5Oc"/>
+                            <constraint firstItem="Q2L-cv-QYR" firstAttribute="trailing" secondItem="ZTW-SF-KFW" secondAttribute="trailing" constant="30" id="sm7-hB-4bt"/>
+                            <constraint firstItem="lit-SS-XNn" firstAttribute="leading" secondItem="Q2L-cv-QYR" secondAttribute="leading" constant="30" id="vzp-eY-OSm"/>
+                            <constraint firstItem="Q2L-cv-QYR" firstAttribute="bottom" secondItem="lit-SS-XNn" secondAttribute="bottom" constant="10" id="yZC-df-M6g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q2L-cv-QYR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1o9-UB-b7r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJG-yQ-tOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.753623188406" y="-2375.2232142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uil-XC-gUY">
+            <objects>
+                <viewController id="wwI-dD-UQt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1IF-Rk-mbM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you been tested for COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnd-r2-poi">
+                                <rect key="frame" x="30" y="410.5" width="354" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="K89-vX-Biu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="zM3-Yk-I0l">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="hgJ-jd-zMM"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7rV-aT-fJT">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZZ-Ih-yAa" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Yes"/>
+                                        <connections>
+                                            <segue destination="fdl-84-jib" kind="show" id="qqF-xg-0dL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vk1-gF-4Vb" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="No"/>
+                                        <connections>
+                                            <segue destination="wuk-1z-mYL" kind="show" id="8UV-wG-fPO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vCq-UE-PiE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xYP-yU-wSZ" firstAttribute="trailing" secondItem="7rV-aT-fJT" secondAttribute="trailing" constant="30" id="4V1-fc-bgV"/>
+                            <constraint firstItem="xYP-yU-wSZ" firstAttribute="trailing" secondItem="zM3-Yk-I0l" secondAttribute="trailing" constant="30" id="AJP-Mg-FIb"/>
+                            <constraint firstItem="zM3-Yk-I0l" firstAttribute="leading" secondItem="xYP-yU-wSZ" secondAttribute="leading" constant="30" id="Fi7-SI-y6D"/>
+                            <constraint firstItem="7rV-aT-fJT" firstAttribute="leading" secondItem="xYP-yU-wSZ" secondAttribute="leading" constant="30" id="Fyg-0i-gM8"/>
+                            <constraint firstItem="Dnd-r2-poi" firstAttribute="leading" secondItem="xYP-yU-wSZ" secondAttribute="leading" constant="30" id="Jtr-n8-Zco"/>
+                            <constraint firstItem="xYP-yU-wSZ" firstAttribute="bottom" secondItem="7rV-aT-fJT" secondAttribute="bottom" constant="10" id="Kg2-1v-7RY"/>
+                            <constraint firstItem="zM3-Yk-I0l" firstAttribute="top" secondItem="xYP-yU-wSZ" secondAttribute="top" constant="30" id="PgJ-ZS-3NQ"/>
+                            <constraint firstItem="Dnd-r2-poi" firstAttribute="centerY" secondItem="1IF-Rk-mbM" secondAttribute="centerY" id="dGk-9b-khO"/>
+                            <constraint firstItem="xYP-yU-wSZ" firstAttribute="trailing" secondItem="Dnd-r2-poi" secondAttribute="trailing" constant="30" id="o1k-Qq-JbM"/>
+                            <constraint firstItem="7rV-aT-fJT" firstAttribute="centerX" secondItem="1IF-Rk-mbM" secondAttribute="centerX" id="z5n-Xe-rQ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xYP-yU-wSZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4dx-CX-hww"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmA-kt-1BJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337.68115942029" y="-1848.2142857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HDP-Y2-siz">
+            <objects>
+                <viewController id="pi4-oC-R8F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wVP-Tn-YLk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you been tested for COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51e-bN-ZSN">
+                                <rect key="frame" x="30" y="410.5" width="354" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="iDi-Cf-llx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xve-ui-Q95">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OV-eU-FVQ" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Yes"/>
+                                        <connections>
+                                            <segue destination="Tln-IA-wfB" kind="show" id="qyh-m9-4A8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aC-Pq-HDs" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="No"/>
+                                        <connections>
+                                            <segue destination="6cc-sU-gVX" kind="show" id="M8z-gl-sKw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VEu-f7-eXq"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="biU-uN-WD0">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="7Ei-BJ-Ij2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="51e-bN-ZSN" firstAttribute="centerY" secondItem="wVP-Tn-YLk" secondAttribute="centerY" id="49z-0n-AsA"/>
+                            <constraint firstItem="mgb-yY-zRq" firstAttribute="trailing" secondItem="biU-uN-WD0" secondAttribute="trailing" constant="30" id="88S-dv-cfz"/>
+                            <constraint firstItem="biU-uN-WD0" firstAttribute="leading" secondItem="mgb-yY-zRq" secondAttribute="leading" constant="30" id="M00-g9-SQ3"/>
+                            <constraint firstItem="mgb-yY-zRq" firstAttribute="trailing" secondItem="xve-ui-Q95" secondAttribute="trailing" constant="30" id="RXY-jG-jaq"/>
+                            <constraint firstItem="51e-bN-ZSN" firstAttribute="leading" secondItem="mgb-yY-zRq" secondAttribute="leading" constant="30" id="TNT-Db-xXg"/>
+                            <constraint firstItem="biU-uN-WD0" firstAttribute="top" secondItem="mgb-yY-zRq" secondAttribute="top" constant="30" id="d7K-iq-XBM"/>
+                            <constraint firstItem="mgb-yY-zRq" firstAttribute="trailing" secondItem="51e-bN-ZSN" secondAttribute="trailing" constant="30" id="dEa-dS-RlH"/>
+                            <constraint firstItem="xve-ui-Q95" firstAttribute="centerX" secondItem="wVP-Tn-YLk" secondAttribute="centerX" id="hea-ch-u3W"/>
+                            <constraint firstItem="mgb-yY-zRq" firstAttribute="bottom" secondItem="xve-ui-Q95" secondAttribute="bottom" constant="10" id="pbQ-rW-fDF"/>
+                            <constraint firstItem="xve-ui-Q95" firstAttribute="leading" secondItem="mgb-yY-zRq" secondAttribute="leading" constant="30" id="z2Z-9X-aTn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mgb-yY-zRq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Og-Hb-3nu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Nd-0e-vpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657" y="-1850"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t54-UG-xGv">
+            <objects>
+                <viewController id="fdl-84-jib" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="spg-49-sKY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you test Positive or Negative?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-MY-1Ok">
+                                <rect key="frame" x="30" y="410.5" width="354" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="EkA-3A-tuv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Z9V-xt-CUI">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nX-G9-hPX" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Positive"/>
+                                        <connections>
+                                            <segue destination="btp-P2-M6K" kind="show" id="xil-Ol-gV4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ev2-MH-706" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Negative"/>
+                                        <connections>
+                                            <action selector="symtomTestedNegative:" destination="k7A-sD-Gsk" eventType="touchUpInside" id="cDT-bf-jzz"/>
+                                            <segue destination="hyJ-yJ-G81" kind="show" id="V4d-JB-7Wp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="S8k-mo-N9T"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="col-1c-EdI">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="7ir-DR-EJD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="col-1c-EdI" firstAttribute="top" secondItem="jD7-JW-hfH" secondAttribute="top" constant="30" id="2ZS-jP-GOI"/>
+                            <constraint firstItem="jD7-JW-hfH" firstAttribute="trailing" secondItem="col-1c-EdI" secondAttribute="trailing" constant="30" id="4cH-tS-R2A"/>
+                            <constraint firstItem="qHC-MY-1Ok" firstAttribute="centerY" secondItem="spg-49-sKY" secondAttribute="centerY" id="59w-T6-W76"/>
+                            <constraint firstItem="jD7-JW-hfH" firstAttribute="bottom" secondItem="Z9V-xt-CUI" secondAttribute="bottom" constant="10" id="ATU-cb-Lb9"/>
+                            <constraint firstItem="qHC-MY-1Ok" firstAttribute="leading" secondItem="jD7-JW-hfH" secondAttribute="leading" constant="30" id="Ref-fw-lBX"/>
+                            <constraint firstItem="jD7-JW-hfH" firstAttribute="trailing" secondItem="Z9V-xt-CUI" secondAttribute="trailing" constant="30" id="SkW-5S-b1S"/>
+                            <constraint firstItem="Z9V-xt-CUI" firstAttribute="centerX" secondItem="spg-49-sKY" secondAttribute="centerX" id="Ymu-kx-AW8"/>
+                            <constraint firstItem="col-1c-EdI" firstAttribute="leading" secondItem="jD7-JW-hfH" secondAttribute="leading" constant="30" id="gjB-j8-pK1"/>
+                            <constraint firstItem="Z9V-xt-CUI" firstAttribute="leading" secondItem="jD7-JW-hfH" secondAttribute="leading" constant="30" id="sRv-sN-uhV"/>
+                            <constraint firstItem="jD7-JW-hfH" firstAttribute="trailing" secondItem="qHC-MY-1Ok" secondAttribute="trailing" constant="30" id="wz1-sa-Zi9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jD7-JW-hfH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="drY-D2-lcD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0IL-Qq-qaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="k7A-sD-Gsk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1139" y="-1147"/>
+        </scene>
+        <!--Red Submit-->
+        <scene sceneID="FXD-3E-vxI">
+            <objects>
+                <viewController id="btp-P2-M6K" customClass="RedSubmit" customModule="COVID_SHIELD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wKM-y9-rMA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-vI-grd">
+                                <rect key="frame" x="30" y="108" width="354" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="bzD-8N-1DI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwg-Lw-DlK" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="20" y="795" width="374" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Jz6-gs-05I"/>
+                                </constraints>
+                                <state key="normal" title="See Map"/>
+                                <connections>
+                                    <action selector="redbutton:" destination="btp-P2-M6K" eventType="touchUpInside" id="yIx-bX-fiM"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aS9-gP-ecN">
+                                <rect key="frame" x="20" y="450" width="374" height="337"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="337" id="eKl-Hs-K8s"/>
+                                </constraints>
+                                <string key="text">Staying at home if you have symptoms (self-isolation)
+If your symptoms are mild, you'll usually be advised to not leave your home for at least 7 days.
+Anyone you live with should not leave your home for 14 days.
+This is called self-isolation.
+
+Call 111 if you're worried about a baby or child.
+If they seem very unwell, are getting worse, or you think there's something seriously wrong, call 999. For users outside the UK, use your country's medical helpline.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location will be represented by a Red dot for other users. You will see yourself as a Blue dot." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mO-YX-JQk">
+                                <rect key="frame" x="20" y="162" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="d0W-g2-Xwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Advice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBt-PN-MeY">
+                                <rect key="frame" x="30" y="389" width="354" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="7Z0-Iz-rkY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0mO-YX-JQk" firstAttribute="top" secondItem="2cO-vI-grd" secondAttribute="bottom" constant="8" id="0HN-Nb-wrA"/>
+                            <constraint firstItem="0mO-YX-JQk" firstAttribute="centerX" secondItem="wKM-y9-rMA" secondAttribute="centerX" id="0iK-da-3yy"/>
+                            <constraint firstAttribute="right" secondItem="2cO-vI-grd" secondAttribute="right" constant="30" id="1xM-Q7-t4F"/>
+                            <constraint firstItem="Fwg-Lw-DlK" firstAttribute="leading" secondItem="wKM-y9-rMA" secondAttribute="leading" constant="20" id="29j-gv-OMu"/>
+                            <constraint firstItem="Fwg-Lw-DlK" firstAttribute="top" secondItem="aS9-gP-ecN" secondAttribute="bottom" constant="8" id="2iz-w2-CwY"/>
+                            <constraint firstAttribute="trailing" secondItem="aS9-gP-ecN" secondAttribute="trailing" constant="20" id="9I3-lz-JA1"/>
+                            <constraint firstAttribute="trailing" secondItem="Fwg-Lw-DlK" secondAttribute="trailing" constant="20" id="9oJ-ge-dwi"/>
+                            <constraint firstItem="0mO-YX-JQk" firstAttribute="leading" secondItem="WHb-Rn-x17" secondAttribute="leading" constant="20" id="CJM-ZE-ejY"/>
+                            <constraint firstItem="2cO-vI-grd" firstAttribute="left" secondItem="wKM-y9-rMA" secondAttribute="left" constant="30" id="FPw-PM-QEU"/>
+                            <constraint firstItem="WHb-Rn-x17" firstAttribute="trailing" secondItem="0mO-YX-JQk" secondAttribute="trailing" constant="20" id="VMh-fB-uLg"/>
+                            <constraint firstItem="CBt-PN-MeY" firstAttribute="left" secondItem="wKM-y9-rMA" secondAttribute="left" constant="30" id="dbx-jV-JnI"/>
+                            <constraint firstItem="aS9-gP-ecN" firstAttribute="top" secondItem="CBt-PN-MeY" secondAttribute="bottom" constant="8" id="eRi-BE-KFw"/>
+                            <constraint firstItem="aS9-gP-ecN" firstAttribute="leading" secondItem="wKM-y9-rMA" secondAttribute="leading" constant="20" id="ncH-ao-3Ow"/>
+                            <constraint firstAttribute="right" secondItem="CBt-PN-MeY" secondAttribute="right" constant="30" id="o1B-eV-7cT"/>
+                            <constraint firstItem="2cO-vI-grd" firstAttribute="top" secondItem="WHb-Rn-x17" secondAttribute="top" constant="20" id="qth-Qk-tIB"/>
+                            <constraint firstItem="aS9-gP-ecN" firstAttribute="centerX" secondItem="wKM-y9-rMA" secondAttribute="centerX" id="sbP-Da-UJ4"/>
+                            <constraint firstItem="WHb-Rn-x17" firstAttribute="bottom" secondItem="Fwg-Lw-DlK" secondAttribute="bottom" constant="10" id="xoV-Th-7oM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WHb-Rn-x17"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Avi-hI-WtW"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="reddata" id="6Yy-EB-B5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZS-Zo-W8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137.68115942029" y="-179.46428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D5e-PD-lls">
+            <objects>
+                <viewController id="Tln-IA-wfB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcd-DF-YJs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you test Positive or Negative?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjN-aL-cDh">
+                                <rect key="frame" x="30" y="410.5" width="354" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="raq-Wa-pf5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6xi-zU-jXF">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdT-kB-nPR" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Positive"/>
+                                        <connections>
+                                            <segue destination="btp-P2-M6K" kind="show" id="ICk-oU-phr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZL1-Qi-L0h" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Negative"/>
+                                        <connections>
+                                            <segue destination="hyJ-yJ-G81" kind="show" id="Jqx-RE-7Du"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uuh-kt-l10"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="5Sl-vJ-WpD">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="kN3-MS-XDS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SjN-aL-cDh" firstAttribute="leading" secondItem="Qwd-pP-U2T" secondAttribute="leading" constant="30" id="1HL-B9-OEl"/>
+                            <constraint firstItem="Qwd-pP-U2T" firstAttribute="trailing" secondItem="5Sl-vJ-WpD" secondAttribute="trailing" constant="30" id="1eu-Ux-wKb"/>
+                            <constraint firstItem="SjN-aL-cDh" firstAttribute="centerY" secondItem="jcd-DF-YJs" secondAttribute="centerY" id="8Jm-R9-9Be"/>
+                            <constraint firstItem="Qwd-pP-U2T" firstAttribute="trailing" secondItem="SjN-aL-cDh" secondAttribute="trailing" constant="30" id="FVK-fb-fwC"/>
+                            <constraint firstItem="6xi-zU-jXF" firstAttribute="leading" secondItem="Qwd-pP-U2T" secondAttribute="leading" constant="30" id="Pey-no-uBP"/>
+                            <constraint firstItem="Qwd-pP-U2T" firstAttribute="bottom" secondItem="6xi-zU-jXF" secondAttribute="bottom" constant="10" id="a9N-b0-D7A"/>
+                            <constraint firstItem="5Sl-vJ-WpD" firstAttribute="leading" secondItem="Qwd-pP-U2T" secondAttribute="leading" constant="30" id="idd-P4-ZXH"/>
+                            <constraint firstItem="Qwd-pP-U2T" firstAttribute="trailing" secondItem="6xi-zU-jXF" secondAttribute="trailing" constant="30" id="nVj-PZ-GEL"/>
+                            <constraint firstItem="6xi-zU-jXF" firstAttribute="centerX" secondItem="jcd-DF-YJs" secondAttribute="centerX" id="nwx-pk-FSM"/>
+                            <constraint firstItem="5Sl-vJ-WpD" firstAttribute="top" secondItem="Qwd-pP-U2T" secondAttribute="top" constant="30" id="ufI-lX-Wky"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qwd-pP-U2T"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fDH-Q7-0IE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7XC-vo-D4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2138" y="-1147"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aOA-Fx-qgG">
+            <objects>
+                <viewController id="6cc-sU-gVX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KaD-vd-CZo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do the people you live with or people you are in close contact with show symtoms of COVID-19?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-Ej-LeC">
+                                <rect key="frame" x="30" y="410.5" width="354" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="23p-GT-QtR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ier-zy-gMd">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-i5-4WP" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="Yes"/>
+                                        <connections>
+                                            <segue destination="wuk-1z-mYL" kind="show" id="JlI-26-lBs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krv-RW-lw0" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="0.0" width="152" height="50"/>
+                                        <state key="normal" title="No"/>
+                                        <connections>
+                                            <segue destination="hyJ-yJ-G81" kind="show" id="P85-JD-ZDz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NER-AU-1Uw"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="xHe-eQ-iux">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="PoL-8I-Tam"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vcs-Ej-LeC" firstAttribute="centerY" secondItem="KaD-vd-CZo" secondAttribute="centerY" id="5xm-wC-e0w"/>
+                            <constraint firstItem="AId-oD-0IV" firstAttribute="trailing" secondItem="xHe-eQ-iux" secondAttribute="trailing" constant="30" id="N0X-IW-UNS"/>
+                            <constraint firstItem="AId-oD-0IV" firstAttribute="trailing" secondItem="ier-zy-gMd" secondAttribute="trailing" constant="30" id="ZZb-cK-2T4"/>
+                            <constraint firstItem="xHe-eQ-iux" firstAttribute="top" secondItem="AId-oD-0IV" secondAttribute="top" constant="30" id="bNU-x9-D9H"/>
+                            <constraint firstItem="ier-zy-gMd" firstAttribute="centerX" secondItem="KaD-vd-CZo" secondAttribute="centerX" id="cqv-4G-hoe"/>
+                            <constraint firstItem="AId-oD-0IV" firstAttribute="bottom" secondItem="ier-zy-gMd" secondAttribute="bottom" constant="10" id="f4g-yZ-Eed"/>
+                            <constraint firstItem="xHe-eQ-iux" firstAttribute="leading" secondItem="AId-oD-0IV" secondAttribute="leading" constant="30" id="l2K-h3-tXZ"/>
+                            <constraint firstItem="ier-zy-gMd" firstAttribute="leading" secondItem="AId-oD-0IV" secondAttribute="leading" constant="30" id="sye-zx-vdN"/>
+                            <constraint firstItem="Vcs-Ej-LeC" firstAttribute="leading" secondItem="AId-oD-0IV" secondAttribute="leading" constant="30" id="tKa-2f-z9R"/>
+                            <constraint firstItem="AId-oD-0IV" firstAttribute="trailing" secondItem="Vcs-Ej-LeC" secondAttribute="trailing" constant="30" id="tti-V7-idN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AId-oD-0IV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NaY-Pd-y8w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oio-H9-l1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3112" y="-1147"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ibv-1C-cNE">
+            <objects>
+                <viewController id="4kb-J3-aGd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nzg-5v-fDv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ave-gv-C5g">
+                                <rect key="frame" x="30" y="552" width="354" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="vIJ-Wm-PD8"/>
+                                </constraints>
+                                <string key="text">The COVID SHIELD allows the user to define their status by following the Status Questionnaire. Once their status is determined, they can visit the map where they can see their location as a blue dot.
+
+The user can see the real-time location of the other users of the app, within a 50m radius, and a dot signifying their status. A red dot means the user has tested positive for COVID-19. A yellow dot means the user shows symptoms of COVID-19 or may be an asymptomatic carrier. A green dot means the user can be considered safe.
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does it work?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEl-5h-17p">
+                                <rect key="frame" x="30" y="472" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ahp-s2-Wuz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="Na2-PD-wxW">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Kpw-Ug-vTS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Na2-PD-wxW" firstAttribute="leading" secondItem="lVy-1N-lWu" secondAttribute="leading" constant="30" id="1tb-2d-l52"/>
+                            <constraint firstItem="lVy-1N-lWu" firstAttribute="trailing" secondItem="Na2-PD-wxW" secondAttribute="trailing" constant="30" id="7R3-qA-w6F"/>
+                            <constraint firstItem="ave-gv-C5g" firstAttribute="top" secondItem="zEl-5h-17p" secondAttribute="bottom" constant="30" id="AaB-Fs-iBG"/>
+                            <constraint firstItem="ave-gv-C5g" firstAttribute="leading" secondItem="nzg-5v-fDv" secondAttribute="leading" constant="30" id="IpJ-SQ-1lE"/>
+                            <constraint firstItem="zEl-5h-17p" firstAttribute="leading" secondItem="lVy-1N-lWu" secondAttribute="leading" constant="30" id="JhN-Fb-Rp6"/>
+                            <constraint firstItem="Na2-PD-wxW" firstAttribute="top" secondItem="lVy-1N-lWu" secondAttribute="top" constant="30" id="h1L-kM-Own"/>
+                            <constraint firstItem="lVy-1N-lWu" firstAttribute="trailing" secondItem="zEl-5h-17p" secondAttribute="trailing" constant="30" id="nnr-SO-uFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ave-gv-C5g" secondAttribute="trailing" constant="30" id="yQr-Tq-haG"/>
+                            <constraint firstItem="lVy-1N-lWu" firstAttribute="bottom" secondItem="ave-gv-C5g" secondAttribute="bottom" constant="10" id="zlC-sc-5fT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lVy-1N-lWu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tc1-Wz-aW5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eP9-0H-yQz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679.7101449275365" y="-3425.2232142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q2Q-Ex-fb2">
+            <objects>
+                <viewController id="ct6-QP-gwv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5aP-SD-6kf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do we use your data?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbb-cR-DDn">
+                                <rect key="frame" x="30" y="472" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pg7-yx-HUz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pNU-Ms-Kwo">
+                                <rect key="frame" x="30" y="552" width="354" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="vNo-QQ-Qce"/>
+                                </constraints>
+                                <string key="text">The COVID SHIELD requires the user’s location services to be enabled. When the user first opens the map, a notification will pop-up asking permission to access the location. The user can enable the location access to either 'When In Use' or 'Always Allow'.
+
+The 'When In Use' permission allows the app to access the user's location only when the app is being used. The 'Always Allow' permission allows the app to access the location of the user at all times, even when the app is closed. We recommend the 'When In Use' permission.
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="j57-Au-cZt">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="ubF-Qm-bDE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j57-Au-cZt" firstAttribute="leading" secondItem="pyc-d7-Zg8" secondAttribute="leading" constant="30" id="Dua-0o-oVC"/>
+                            <constraint firstItem="pNU-Ms-Kwo" firstAttribute="top" secondItem="kbb-cR-DDn" secondAttribute="bottom" constant="30" id="GgY-nh-RnL"/>
+                            <constraint firstItem="j57-Au-cZt" firstAttribute="top" secondItem="pyc-d7-Zg8" secondAttribute="top" constant="30" id="Jnn-LS-pq0"/>
+                            <constraint firstItem="pyc-d7-Zg8" firstAttribute="bottom" secondItem="pNU-Ms-Kwo" secondAttribute="bottom" constant="10" id="L1z-3U-V8A"/>
+                            <constraint firstItem="pyc-d7-Zg8" firstAttribute="trailing" secondItem="j57-Au-cZt" secondAttribute="trailing" constant="30" id="WKn-AH-25e"/>
+                            <constraint firstItem="pyc-d7-Zg8" firstAttribute="trailing" secondItem="kbb-cR-DDn" secondAttribute="trailing" constant="30" id="YxC-Pl-gEv"/>
+                            <constraint firstItem="kbb-cR-DDn" firstAttribute="leading" secondItem="pyc-d7-Zg8" secondAttribute="leading" constant="30" id="h4q-Vr-eNm"/>
+                            <constraint firstItem="pNU-Ms-Kwo" firstAttribute="leading" secondItem="pyc-d7-Zg8" secondAttribute="leading" constant="30" id="ibv-I5-ZdG"/>
+                            <constraint firstItem="pyc-d7-Zg8" firstAttribute="trailing" secondItem="pNU-Ms-Kwo" secondAttribute="trailing" constant="30" id="yu5-n0-4I6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pyc-d7-Zg8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x3g-LA-KYG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQ4-q0-VVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3363.7681159420295" y="-3425.2232142857142"/>
+        </scene>
+        <!--Map Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapScreenViewController" customModule="COVID_SHIELD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uJl-df-mhj">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jpH-uD-JEC"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="uJl-df-mhj" secondAttribute="trailing" id="Ki4-vh-uCk"/>
+                            <constraint firstItem="uJl-df-mhj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ZHD-69-hlS"/>
+                            <constraint firstItem="uJl-df-mhj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="boi-GG-4dU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="uJl-df-mhj" secondAttribute="bottom" id="mep-hN-qHc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GQY-wf-JGF">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="GpO-DB-fw7">
+                            <connections>
+                                <segue destination="AhY-fW-eic" kind="show" id="mtX-3c-DQx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="uJl-df-mhj" id="xcW-Yf-TsG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1993" y="-3425"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9yf-hT-jTj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YNT-rR-aAZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="14T-eL-VGT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oz3-O9-79l" kind="relationship" relationship="rootViewController" id="Xn0-kP-N6R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9e-ij-58m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1220" y="-2894"/>
+        </scene>
+        <!--Yellow Submit-->
+        <scene sceneID="n8l-Sg-eEW">
+            <objects>
+                <viewController id="wuk-1z-mYL" customClass="YellowSubmit" customModule="COVID_SHIELD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Arh-Sf-evv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAg-Ej-4tg">
+                                <rect key="frame" x="30" y="108" width="354" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="UBC-nf-hlz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCO-m7-r1a" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="30" y="795" width="354" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="2UE-va-GKU"/>
+                                </constraints>
+                                <state key="normal" title="See Map"/>
+                                <connections>
+                                    <action selector="yellowbutton:" destination="wuk-1z-mYL" eventType="touchUpInside" id="0h8-Nu-QIy"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Diz-VV-r0v">
+                                <rect key="frame" x="20" y="450" width="374" height="337"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="337" id="pgX-au-izc"/>
+                                </constraints>
+                                <string key="text">Staying at home if you have symptoms (self-isolation)
+If your symptoms are mild, you'll usually be advised to not leave your home for at least 7 days.
+Anyone you live with should not leave your home for 14 days.
+This is called self-isolation.
+
+Call 111 if you're worried about a baby or child.
+If they seem very unwell, are getting worse, or you think there's something seriously wrong, call 999. For users outside the UK, use your country's medical helpline.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location will be represented by a Yellow dot for other users. You will see yourself as a Blue dot." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFZ-6Z-GN3">
+                                <rect key="frame" x="20" y="162" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Yd7-ch-EEd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Advice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwn-Vq-Gqs">
+                                <rect key="frame" x="30" y="389" width="354" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="cj9-6o-aJ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Diz-VV-r0v" firstAttribute="centerX" secondItem="Arh-Sf-evv" secondAttribute="centerX" id="0KI-ZU-A2N"/>
+                            <constraint firstItem="I0I-kH-kkA" firstAttribute="bottom" secondItem="OCO-m7-r1a" secondAttribute="bottom" constant="10" id="5EJ-2O-5Nl"/>
+                            <constraint firstAttribute="right" secondItem="OCO-m7-r1a" secondAttribute="right" constant="30" id="6cZ-Gn-qEH"/>
+                            <constraint firstAttribute="right" secondItem="kAg-Ej-4tg" secondAttribute="right" constant="30" id="FuA-Sd-mYo"/>
+                            <constraint firstItem="lFZ-6Z-GN3" firstAttribute="centerX" secondItem="Arh-Sf-evv" secondAttribute="centerX" id="FxG-27-Oq7"/>
+                            <constraint firstAttribute="right" secondItem="lwn-Vq-Gqs" secondAttribute="right" constant="30" id="TSO-gi-nFj"/>
+                            <constraint firstItem="lFZ-6Z-GN3" firstAttribute="top" secondItem="kAg-Ej-4tg" secondAttribute="bottom" constant="8" id="USk-ZQ-abC"/>
+                            <constraint firstItem="Diz-VV-r0v" firstAttribute="top" secondItem="lwn-Vq-Gqs" secondAttribute="bottom" constant="8" id="Uu0-AU-QIh"/>
+                            <constraint firstItem="I0I-kH-kkA" firstAttribute="trailing" secondItem="lFZ-6Z-GN3" secondAttribute="trailing" constant="20" id="Vcg-Yt-WWl"/>
+                            <constraint firstItem="lFZ-6Z-GN3" firstAttribute="leading" secondItem="I0I-kH-kkA" secondAttribute="leading" constant="20" id="WLx-u8-dne"/>
+                            <constraint firstItem="kAg-Ej-4tg" firstAttribute="left" secondItem="Arh-Sf-evv" secondAttribute="left" constant="30" id="ejN-9W-Z0J"/>
+                            <constraint firstItem="lwn-Vq-Gqs" firstAttribute="left" secondItem="Arh-Sf-evv" secondAttribute="left" constant="30" id="hHL-Mq-N4h"/>
+                            <constraint firstItem="OCO-m7-r1a" firstAttribute="top" secondItem="Diz-VV-r0v" secondAttribute="bottom" constant="8" id="he6-IM-ee0"/>
+                            <constraint firstItem="OCO-m7-r1a" firstAttribute="left" secondItem="Arh-Sf-evv" secondAttribute="left" constant="30" id="jxk-7W-tH9"/>
+                            <constraint firstItem="Diz-VV-r0v" firstAttribute="leading" secondItem="Arh-Sf-evv" secondAttribute="leading" constant="20" id="qsd-V0-vac"/>
+                            <constraint firstAttribute="trailing" secondItem="Diz-VV-r0v" secondAttribute="trailing" constant="20" id="tob-8n-RF6"/>
+                            <constraint firstItem="kAg-Ej-4tg" firstAttribute="top" secondItem="I0I-kH-kkA" secondAttribute="top" constant="20" id="vfR-UH-Lik"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I0I-kH-kkA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2De-91-iUJ"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="yellowdata" id="P79-gj-Phd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHL-Le-dpB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137.68115942029" y="-179.46428571428569"/>
+        </scene>
+        <!--Green Submit-->
+        <scene sceneID="mfZ-FF-H5r">
+            <objects>
+                <viewController id="hyJ-yJ-G81" customClass="GreenSubmit" customModule="COVID_SHIELD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6o9-As-bap">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21T-iA-vyJ">
+                                <rect key="frame" x="30" y="108" width="354" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="hlR-9N-nBO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9w-oI-m70" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="30" y="795" width="354" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="SI2-5e-wnl"/>
+                                </constraints>
+                                <state key="normal" title="See Map"/>
+                                <connections>
+                                    <action selector="greenbutton:" destination="hyJ-yJ-G81" eventType="touchUpInside" id="4Ox-Mw-x9Y"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ApR-aM-mZl">
+                                <rect key="frame" x="20" y="450" width="374" height="337"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="337" id="MxG-NL-q8Y"/>
+                                </constraints>
+                                <string key="text">Staying at home if you have symptoms (self-isolation)
+If your symptoms are mild, you'll usually be advised to not leave your home for at least 7 days.
+Anyone you live with should not leave your home for 14 days.
+This is called self-isolation.
+
+Call 111 if you're worried about a baby or child.
+If they seem very unwell, are getting worse, or you think there's something seriously wrong, call 999. For users outside the UK, use your country's medical helpline.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location will be represented by a Green dot for other users. You will see yourself as a Blue dot." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fk-sa-Gpu">
+                                <rect key="frame" x="20" y="162" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="OIz-g4-u5E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Advice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-o5-cVW">
+                                <rect key="frame" x="30" y="389" width="354" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="sMR-vw-3bg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ApR-aM-mZl" firstAttribute="centerX" secondItem="6o9-As-bap" secondAttribute="centerX" id="0mL-4L-ecm"/>
+                            <constraint firstItem="Z9w-oI-m70" firstAttribute="top" secondItem="ApR-aM-mZl" secondAttribute="bottom" constant="8" id="1NF-dS-7dY"/>
+                            <constraint firstAttribute="right" secondItem="Z9w-oI-m70" secondAttribute="right" constant="30" id="45s-Fa-Xxc"/>
+                            <constraint firstAttribute="right" secondItem="21T-iA-vyJ" secondAttribute="right" constant="30" id="5L4-Jv-0XI"/>
+                            <constraint firstItem="8Fk-sa-Gpu" firstAttribute="centerX" secondItem="6o9-As-bap" secondAttribute="centerX" id="6lr-9p-oAW"/>
+                            <constraint firstItem="ApR-aM-mZl" firstAttribute="leading" secondItem="6o9-As-bap" secondAttribute="leading" constant="20" id="DTA-BU-EPP"/>
+                            <constraint firstItem="ApR-aM-mZl" firstAttribute="top" secondItem="tmb-o5-cVW" secondAttribute="bottom" constant="8" id="INf-AG-pcm"/>
+                            <constraint firstItem="8Fk-sa-Gpu" firstAttribute="leading" secondItem="w9R-1d-3vq" secondAttribute="leading" constant="20" id="LQO-oR-5bT"/>
+                            <constraint firstItem="tmb-o5-cVW" firstAttribute="left" secondItem="6o9-As-bap" secondAttribute="left" constant="30" id="NJY-fK-waA"/>
+                            <constraint firstItem="21T-iA-vyJ" firstAttribute="top" secondItem="w9R-1d-3vq" secondAttribute="top" constant="20" id="QDb-JT-Ksv"/>
+                            <constraint firstItem="w9R-1d-3vq" firstAttribute="bottom" secondItem="Z9w-oI-m70" secondAttribute="bottom" constant="10" id="Z1s-C3-Tmd"/>
+                            <constraint firstItem="8Fk-sa-Gpu" firstAttribute="top" secondItem="21T-iA-vyJ" secondAttribute="bottom" constant="8" id="h5T-z3-8jU"/>
+                            <constraint firstItem="w9R-1d-3vq" firstAttribute="trailing" secondItem="8Fk-sa-Gpu" secondAttribute="trailing" constant="20" id="l6L-hI-ROc"/>
+                            <constraint firstItem="21T-iA-vyJ" firstAttribute="left" secondItem="6o9-As-bap" secondAttribute="left" constant="30" id="l8B-vG-6Pv"/>
+                            <constraint firstAttribute="right" secondItem="tmb-o5-cVW" secondAttribute="right" constant="30" id="rIL-zN-wuO"/>
+                            <constraint firstAttribute="trailing" secondItem="ApR-aM-mZl" secondAttribute="trailing" constant="20" id="wtG-2a-KLp"/>
+                            <constraint firstItem="Z9w-oI-m70" firstAttribute="left" secondItem="6o9-As-bap" secondAttribute="left" constant="30" id="xL1-Da-N2t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w9R-1d-3vq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MIS-NM-zgN"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="greendata" id="oN9-a1-jdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daR-6a-59p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3111.594202898551" y="-179.46428571428569"/>
+        </scene>
+        <!--See Map-->
+        <scene sceneID="R40-Eg-IcW">
+            <objects>
+                <viewController id="lHJ-1g-5WN" customClass="SeeMap" customModule="COVID_SHIELD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0la-yM-ggc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nM-PX-C48">
+                                <rect key="frame" x="30" y="425" width="354" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="DHC-xO-bPg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xK1-Gd-6ZI" customClass="BaseButton" customModule="COVID_SHIELD" customModuleProvider="target">
+                                <rect key="frame" x="20" y="795" width="374" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="NPq-Gf-saB"/>
+                                </constraints>
+                                <state key="normal" title="See Map"/>
+                                <connections>
+                                    <action selector="seeMapButtonConfirm:" destination="ULt-sb-Afn" eventType="touchUpInside" id="NK5-kl-821"/>
+                                    <action selector="seeMapButtonConfirm:" destination="lHJ-1g-5WN" eventType="touchUpInside" id="lpM-bk-YuY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEH-fX-sIW">
+                                <rect key="frame" x="30" y="615" width="354" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="UiR-mt-XRx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COVIDSHIELDLOGOB" translatesAutoresizingMaskIntoConstraints="NO" id="WXf-xA-W76">
+                                <rect key="frame" x="30" y="118" width="354" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="OPT-G1-eg5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XrE-8g-Xo3">
+                                <rect key="frame" x="30" y="545" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="tAs-gw-hCS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qnf-in-SHF" firstAttribute="trailing" secondItem="XrE-8g-Xo3" secondAttribute="trailing" constant="30" id="3k1-4y-nmA"/>
+                            <constraint firstAttribute="trailing" secondItem="xK1-Gd-6ZI" secondAttribute="trailing" constant="20" id="Kgq-od-qe0"/>
+                            <constraint firstItem="eEH-fX-sIW" firstAttribute="centerX" secondItem="0la-yM-ggc" secondAttribute="centerX" id="L7K-C8-YqX"/>
+                            <constraint firstItem="eEH-fX-sIW" firstAttribute="leading" secondItem="Qnf-in-SHF" secondAttribute="leading" constant="30" id="OQg-A6-cXM"/>
+                            <constraint firstItem="Qnf-in-SHF" firstAttribute="bottom" secondItem="xK1-Gd-6ZI" secondAttribute="bottom" constant="10" id="QMJ-zG-7xg"/>
+                            <constraint firstItem="Qnf-in-SHF" firstAttribute="trailing" secondItem="eEH-fX-sIW" secondAttribute="trailing" constant="30" id="SKp-Pw-jAU"/>
+                            <constraint firstItem="2nM-PX-C48" firstAttribute="centerY" secondItem="0la-yM-ggc" secondAttribute="centerY" id="USl-Zv-gkT"/>
+                            <constraint firstItem="xK1-Gd-6ZI" firstAttribute="leading" secondItem="0la-yM-ggc" secondAttribute="leading" constant="20" id="VAw-zg-whw"/>
+                            <constraint firstItem="eEH-fX-sIW" firstAttribute="top" secondItem="XrE-8g-Xo3" secondAttribute="bottom" constant="10" id="Wwq-0B-zNU"/>
+                            <constraint firstItem="WXf-xA-W76" firstAttribute="leading" secondItem="Qnf-in-SHF" secondAttribute="leading" constant="30" id="f4v-N7-f2G"/>
+                            <constraint firstAttribute="right" secondItem="2nM-PX-C48" secondAttribute="right" constant="30" id="gOI-8Q-VU0"/>
+                            <constraint firstItem="XrE-8g-Xo3" firstAttribute="leading" secondItem="Qnf-in-SHF" secondAttribute="leading" constant="30" id="gV7-gY-xoQ"/>
+                            <constraint firstItem="WXf-xA-W76" firstAttribute="top" secondItem="Qnf-in-SHF" secondAttribute="top" constant="30" id="nz8-gr-84Y"/>
+                            <constraint firstItem="xK1-Gd-6ZI" firstAttribute="top" secondItem="eEH-fX-sIW" secondAttribute="bottom" constant="10" id="s9z-cs-FEq"/>
+                            <constraint firstItem="2nM-PX-C48" firstAttribute="left" secondItem="0la-yM-ggc" secondAttribute="left" constant="30" id="xpy-op-tMz"/>
+                            <constraint firstItem="Qnf-in-SHF" firstAttribute="trailing" secondItem="WXf-xA-W76" secondAttribute="trailing" constant="30" id="zIx-uO-QfX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qnf-in-SHF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Awh-pl-Eg1"/>
+                    <connections>
+                        <outlet property="imageView" destination="XrE-8g-Xo3" id="NXd-KW-1Dd"/>
+                        <outlet property="statusLabel" destination="eEH-fX-sIW" id="ANn-9M-xKc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="seeMapIdentifier" id="UCr-Nx-LIR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CnV-Hi-iyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ULt-sb-Afn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="-3708"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="P85-JD-ZDz"/>
+        <segue reference="JlI-26-lBs"/>
+        <segue reference="UCr-Nx-LIR"/>
+        <segue reference="ICk-oU-phr"/>
+        <segue reference="tRF-ZS-b1O"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="COVIDSHIELDLOGOB" width="744" height="658"/>
+        <image name="COVIDSHIELDP" width="486" height="682"/>
+    </resources>
+</document>
